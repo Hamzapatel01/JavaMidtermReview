@@ -1,5 +1,7 @@
 package midtermreview;
 
+import java.util.Scanner;
+
 public class MidtermReview {
 
     public static void main(String[] args) {
@@ -13,8 +15,6 @@ public class MidtermReview {
 //            System.out.println(x);
 //            x++;
 //        } while (x <= 12);
-
-
 //        int i = 1;
 //
 //        while (i <= 12) {
@@ -26,7 +26,18 @@ public class MidtermReview {
 //            }
 //
 //        }
-
+        String name;
+        int YOB;
+        System.out.print("Enter the name ==> ");
+        Scanner sc = new Scanner(System.in);
+        name=sc.nextLine();
+        
+        System.out.print("Enter the year you were born ==> ");
+        YOB=sc.nextInt();
+        
+        greetings g1=new greetings(name,YOB);
+        
+        g1.PrintMessage();
 
     }
 
